@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骨架数据获取 - HealthScan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">首页</a></li>
+                    <li><a href="../index.html#services">服务</a></li>
+                    <li><a href="../index.html#technology" class="active">技术</a></li>
+                    <li><a href="../index.html#about">关于我们</a></li>
+                    <li><a href="../index.html#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 技术横幅 -->
+    <section class="tech-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>骨架数据获取</h1>
+            <p>先进的人体姿态估计系统</p>
+        </div>
+        <img src="../images/skeleton.png" alt="骨架数据获取技术" class="banner-image">
+    </section>
+
+    <!-- 技术详情 -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="section-content">
+                <h3 class="tech-section-title">技术概述</h3>
+                <p class="tech-description">骨架数据获取是我们健康监测系统的基础技术，通过先进的计算机视觉算法和深度学习模型，能够实时、精确地追踪人体骨架关键点，为后续的动作分析提供高质量的骨架数据。我们的技术在复杂环境下仍能保持高精度，为健康监测应用奠定坚实基础。</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-camera"></i></div>
+                        <h4>多模态输入</h4>
+                        <p>支持RGB摄像头、深度摄像头和红外传感器等多种输入设备，适应不同应用场景和环境条件。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                        <h4>边缘计算</h4>
+                        <p>优化的算法架构支持在边缘设备上实时运行，保护隐私并降低网络依赖，适合家庭健康监测场景。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>隐私保护</h4>
+                        <p>仅提取骨架数据而非原始图像，从源头保护用户隐私，符合医疗健康领域的严格隐私要求。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">核心算法</h3>
+                <div class="detail-content">
+                    <div class="detail-text">
+                        <p>我们的骨架数据获取技术基于最先进的深度学习模型：</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <div><strong>HRNet</strong>：高分辨率网络保持全过程高分辨率表示，提高关键点定位精度</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>OpenPose</strong>：基于部位亲和场的多人姿态估计，支持复杂场景下多人同时追踪</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>VideoPose3D</strong>：时空一致性约束的3D姿态估计，提供更丰富的骨架信息</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>自研轻量级模型</strong>：针对边缘设备优化的高效骨架提取模型，降低40%计算量</div></li>
+                        </ul>
+                    </div>
+                    <div class="detail-image">
+                        <img src="../images/skeleton-tracking.svg" alt="骨架数据获取算法">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">技术流程</h3>
+                <div class="detail-content reverse">
+                    <div class="detail-image">
+                        <img src="../images/technology.svg" alt="骨架数据获取流程">
+                    </div>
+                    <div class="detail-text">
+                        <p>我们的骨架数据获取技术通过以下流程实现高精度骨架提取：</p>
+                        <ol class="numbered-list">
+                            <li><strong>图像预处理</strong>：对输入视频进行降噪、光照补偿和增强处理</li>
+                            <li><strong>人体检测</strong>：采用YOLOv5等高效目标检测算法精确定位视频中的人体区域</li>
+                            <li><strong>关键点定位</strong>：使用HRNet等模型识别人体的17-25个关键骨骼点</li>
+                            <li><strong>骨架构建</strong>：基于关键点构建完整的人体骨架模型，建立关节连接关系</li>
+                            <li><strong>姿态优化</strong>：通过时空一致性约束和物理约束优化骨架质量，消除抖动</li>
+                            <li><strong>数据标准化</strong>：生成标准化的骨架数据，支持不同应用场景的后续分析</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">技术指标</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">30+ FPS</div>
+                        <div class="metric-name">实时处理速度</div>
+                        <p>在主流硬件上实现每秒30帧以上的处理速度，支持实时监测</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">±3.5px</div>
+                        <div class="metric-name">关键点精度</div>
+                        <p>关键骨骼点定位平均误差小于3.5像素，超过行业平均水平</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">95%+</div>
+                        <div class="metric-name">复杂环境准确率</div>
+                        <p>在光线变化、部分遮挡等复杂环境下仍保持95%以上的准确率</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">5人</div>
+                        <div class="metric-name">多人追踪能力</div>
+                        <p>同时追踪多达5人的骨架数据，保持各自的身份一致性</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">应用场景</h3>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-home"></i></div>
+                        <h4>智能家庭健康监测</h4>
+                        <p>在家庭环境中实时获取居住者的骨架数据，支持跌倒检测、异常行为识别和日常活动分析，为老年人和特殊人群提供安全保障。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-hospital"></i></div>
+                        <h4>医疗康复评估</h4>
+                        <p>为医疗机构提供精确的骨架数据采集工具，支持康复训练评估、运动功能恢复监测和治疗效果量化，提高康复治疗效果。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h4>慢性病管理</h4>
+                        <p>通过长期骨架数据采集和分析，辅助帕金森、阿尔兹海默症等慢性病的早期筛查、病情监测和用药效果评估，提供客观量化指标。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>想了解更多？</h3>
+                <p>我们的技术专家随时为您提供更详细的技术咨询和演示，帮助您了解骨架数据获取技术如何为您的健康监测需求提供高质量的基础数据支持。</p>
+                <a href="../index.html#contact" class="btn btn-primary">联系我们</a>
+                <a href="../index.html#technology" class="btn btn-secondary">返回技术列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="../index.html#home">首页</a></li>
+                        <li><a href="../index.html#services">服务</a></li>
+                        <li><a href="../index.html#technology">技术</a></li>
+                        <li><a href="../index.html#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="../services/alzheimer.html">阿尔兹海默症检测</a></li>
+                        <li><a href="../services/fall-detection.html">跌倒检测与预防</a></li>
+                        <li><a href="../services/health-analytics.html">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

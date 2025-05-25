@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f5f7fa" rx="10" ry="10"/>
+  
+  <!-- 人体轮廓 -->
+  <path d="M400,120 C430,120 455,145 455,175 C455,205 430,230 400,230 C370,230 345,205 345,175 C345,145 370,120 400,120" fill="#e4e8f0" stroke="#3498db" stroke-width="2"/>
+  
+  <!-- 骨架线条 -->
+  <!-- 头部到躯干 -->
+  <line x1="400" y1="230" x2="400" y2="350" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 左臂 -->
+  <line x1="400" y1="260" x2="320" y2="230" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  <line x1="320" y1="230" x2="280" y2="320" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 右臂 -->
+  <line x1="400" y1="260" x2="480" y2="230" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  <line x1="480" y1="230" x2="520" y2="320" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 左腿 -->
+  <line x1="400" y1="350" x2="350" y2="430" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  <line x1="350" y1="430" x2="330" y2="480" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 右腿 -->
+  <line x1="400" y1="350" x2="450" y2="430" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  <line x1="450" y1="430" x2="470" y2="480" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 关节点 -->
+  <circle cx="400" cy="175" r="30" fill="#fff" stroke="#3498db" stroke-width="2"/><!-- 头部 -->
+  <circle cx="400" cy="260" r="8" fill="#3498db"/><!-- 肩部 -->
+  <circle cx="400" cy="350" r="8" fill="#3498db"/><!-- 髋部 -->
+  
+  <circle cx="320" cy="230" r="6" fill="#3498db"/><!-- 左肩 -->
+  <circle cx="280" cy="320" r="6" fill="#3498db"/><!-- 左手 -->
+  
+  <circle cx="480" cy="230" r="6" fill="#3498db"/><!-- 右肩 -->
+  <circle cx="520" cy="320" r="6" fill="#3498db"/><!-- 右手 -->
+  
+  <circle cx="350" cy="430" r="6" fill="#3498db"/><!-- 左膝 -->
+  <circle cx="330" cy="480" r="6" fill="#3498db"/><!-- 左脚 -->
+  
+  <circle cx="450" cy="430" r="6" fill="#3498db"/><!-- 右膝 -->
+  <circle cx="470" cy="480" r="6" fill="#3498db"/><!-- 右脚 -->
+  
+  <!-- 动画效果 -->
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    circle {
+      animation: pulse 2s infinite;
+    }
+    line {
+      animation: pulse 2s infinite;
+      animation-delay: 0.5s;
+    }
+  </style>
+  
+  <!-- 数据点和连接线 -->
+  <g opacity="0.7">
+    <line x1="520" y1="320" x2="600" y2="280" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="470" y1="480" x2="550" y2="450" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="400" y1="175" x2="480" y2="120" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,3"/>
+    
+    <circle cx="600" cy="280" r="4" fill="#2c3e50"/>
+    <circle cx="550" cy="450" r="4" fill="#2c3e50"/>
+    <circle cx="480" cy="120" r="4" fill="#2c3e50"/>
+    
+    <rect x="610" y="270" width="60" height="20" rx="5" ry="5" fill="#2c3e50" opacity="0.8"/>
+    <text x="640" y="285" font-family="Arial" font-size="10" fill="white" text-anchor="middle">X: 0.82</text>
+    
+    <rect x="560" y="440" width="60" height="20" rx="5" ry="5" fill="#2c3e50" opacity="0.8"/>
+    <text x="590" y="455" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Y: 0.95</text>
+    
+    <rect x="490" y="110" width="60" height="20" rx="5" ry="5" fill="#2c3e50" opacity="0.8"/>
+    <text x="520" y="125" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Z: 0.73</text>
+  </g>
+  
+  <!-- 技术标签 -->
+  <rect x="100" y="50" width="180" height="30" rx="15" ry="15" fill="#3498db" opacity="0.9"/>
+  <text x="190" y="70" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">骨架动作识别技术</text>
+  
+  <!-- 数据流动效果 -->
+  <g opacity="0.5">
+    <circle cx="150" cy="200" r="3" fill="#3498db">
+      <animate attributeName="cx" from="150" to="400" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" from="200" to="260" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="180" r="3" fill="#3498db">
+      <animate attributeName="cx" from="200" to="400" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" from="180" to="260" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="220" r="3" fill="#3498db">
+      <animate attributeName="cx" from="180" to="400" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" from="220" to="260" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

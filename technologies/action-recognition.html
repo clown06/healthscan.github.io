@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于骨架的动作识别 - HealthScan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">首页</a></li>
+                    <li><a href="../index.html#services">服务</a></li>
+                    <li><a href="../index.html#technology" class="active">技术</a></li>
+                    <li><a href="../index.html#about">关于我们</a></li>
+                    <li><a href="../index.html#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 技术横幅 -->
+    <section class="tech-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>基于骨架的动作识别</h1>
+            <p>智能健康分析的核心引擎</p>
+        </div>
+        <img src="../images/infogcn.png" alt="基于骨架的动作识别技术" class="banner-image">
+    </section>
+
+    <!-- 技术详情 -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="section-content">
+                <h3 class="tech-section-title">技术概述</h3>
+                <p class="tech-description">基于骨架的动作识别是我们健康监测系统的智能核心，通过先进的图卷积网络和时序建模技术，对人体骨架数据进行深度分析，实现高精度的行为识别和健康状态评估。我们的技术能够捕捉微妙的动作变化，为健康监测提供可靠的智能支持。</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h4>图卷积网络</h4>
+                        <p>采用创新的图卷积网络架构，将人体骨架建模为图结构，有效捕捉关节间的空间关系和动态变化。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-clock"></i></div>
+                        <h4>时序建模</h4>
+                        <p>结合注意力机制和循环神经网络，精确捕捉动作序列的时间依赖关系，识别复杂的行为模式。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                        <h4>自适应学习</h4>
+                        <p>系统能够从用户数据中持续学习，不断优化识别算法，适应个体行为特点和变化。</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">模型架构</h3>
+                <div class="detail-content">
+                    <div class="detail-text">
+                        <p>我们的骨架动作识别模型采用创新的多层次架构：</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <div><strong>InfoGCN</strong>：信息增强型图卷积网络，提高骨架拓扑信息利用效率</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>时空注意力模块</strong>：自适应关注关键骨骼点和关键时间段</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>多尺度特征融合</strong>：捕捉不同时间尺度的动作特征</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>轻量级设计</strong>：优化的模型架构，参数量减少40%，支持边缘设备部署</div></li>
+                        </ul>
+                    </div>
+                    <div class="detail-image">
+                        <img src="../images/technology.svg" alt="动作识别模型架构">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">技术流程</h3>
+                <div class="detail-content reverse">
+                    <div class="detail-image">
+                        <img src="../images/about-us.svg" alt="动作识别流程">
+                    </div>
+                    <div class="detail-text">
+                        <p>我们的骨架动作识别技术通过以下流程实现智能健康分析：</p>
+                        <ol class="numbered-list">
+                            <li><strong>数据预处理</strong>：对骨架时序数据进行标准化、增强和噪声过滤</li>
+                            <li><strong>特征提取</strong>：使用图卷积网络提取骨架的空间特征和关节关系</li>
+                            <li><strong>时序建模</strong>：通过循环神经网络和注意力机制分析动作序列的时间依赖</li>
+                            <li><strong>多模态融合</strong>：结合骨架数据、环境信息和历史记录进行综合分析</li>
+                            <li><strong>行为分类</strong>：基于深度学习模型对行为进行精确分类和识别</li>
+                            <li><strong>异常检测</strong>：识别与正常行为模式偏离的异常动作，及时预警</li>
+                            <li><strong>持续优化</strong>：通过在线学习不断更新模型参数，提高识别准确率</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">性能指标</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">95.8%</div>
+                        <div class="metric-name">识别准确率</div>
+                        <p>在标准动作数据集上的平均识别准确率，超过行业领先水平</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">92.3%</div>
+                        <div class="metric-name">健康行为识别</div>
+                        <p>在特定健康监测场景下的行为识别准确率，包括异常行为检测</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">25ms</div>
+                        <div class="metric-name">推理延迟</div>
+                        <p>单帧处理延迟，支持实时监测和即时响应</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">50+</div>
+                        <div class="metric-name">行为类别</div>
+                        <p>系统能够识别的不同行为类别数量，覆盖日常活动和健康相关行为</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">应用场景</h3>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>健康趋势分析</h4>
+                        <p>通过长期行为数据分析，系统能够识别微妙的行为变化趋势，提前2-4周发现潜在健康问题，为预防性干预提供依据。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-brain"></i></div>
+                        <h4>认知功能评估</h4>
+                        <p>基于日常活动模式分析，评估认知功能状态，辅助阿尔兹海默症等神经退行性疾病的早期筛查和病情监测。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-user-md"></i></div>
+                        <h4>康复进度监测</h4>
+                        <p>为康复训练提供客观量化的评估指标，追踪康复进度，优化康复方案，提高康复效果。</p>
+                    </div>
+                </div>
+            
+            <div class="cta-section">
+                <h3>想了解更多？</h3>
+                <p>我们的AI专家随时为您提供更详细的技术咨询和演示，帮助您了解基于骨架的动作识别技术如何为您的健康监测需求提供智能解决方案。</p>
+                <a href="../index.html#contact" class="btn btn-primary">联系我们</a>
+                <a href="../index.html#technology" class="btn btn-secondary">返回技术列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="../index.html#home">首页</a></li>
+                        <li><a href="../index.html#services">服务</a></li>
+                        <li><a href="../index.html#technology">技术</a></li>
+                        <li><a href="../index.html#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="../services/alzheimer.html">阿尔兹海默症检测</a></li>
+                        <li><a href="../services/fall-detection.html">跌倒检测与预防</a></li>
+                        <li><a href="../services/health-analytics.html">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

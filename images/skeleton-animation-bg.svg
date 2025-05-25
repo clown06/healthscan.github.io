@@ -1,0 +1,348 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="rgba(6, 190, 182, 0.1)" rx="0" ry="0"/>
+  
+  <!-- 多个骨架人形 -->
+  <!-- 骨架人形 1 - 走路动作 -->
+  <g class="skeleton skeleton-1" opacity="0.6">
+    <!-- 头部到躯干 -->
+    <circle cx="200" cy="150" r="20" fill="rgba(52, 152, 219, 0.3)" stroke="#3498db" stroke-width="2"/>
+    <line x1="200" y1="170" x2="200" y2="280" stroke="#3498db" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- 左臂 -->
+    <line x1="200" y1="200" x2="160" y2="240" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="160;170;160" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="240" x2="140" y2="280" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="160;170;160" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="140;150;140" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="280;270;280" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右臂 -->
+    <line x1="200" y1="200" x2="240" y2="240" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="240" x2="260" y2="280" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="260;250;260" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="280;270;280" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 左腿 -->
+    <line x1="200" y1="280" x2="180" y2="350" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="180" y1="350" x2="190" y2="420" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="190;180;190" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右腿 -->
+    <line x1="200" y1="280" x2="220" y2="350" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="220;230;220" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="220" y1="350" x2="210" y2="420" stroke="#3498db" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="220;230;220" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="210;220;210" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 关节点 -->
+    <circle cx="200" cy="200" r="4" fill="#3498db"/>
+    <circle cx="200" cy="280" r="4" fill="#3498db"/>
+    
+    <circle cx="160" cy="240" r="3" fill="#3498db">
+      <animate attributeName="cx" values="160;170;160" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="280" r="3" fill="#3498db">
+      <animate attributeName="cx" values="140;150;140" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="280;270;280" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="240" cy="240" r="3" fill="#3498db">
+      <animate attributeName="cx" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="240;230;240" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="280" r="3" fill="#3498db">
+      <animate attributeName="cx" values="260;250;260" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="280;270;280" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="180" cy="350" r="3" fill="#3498db">
+      <animate attributeName="cx" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="190" cy="420" r="3" fill="#3498db">
+      <animate attributeName="cx" values="190;180;190" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="220" cy="350" r="3" fill="#3498db">
+      <animate attributeName="cx" values="220;230;220" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="420" r="3" fill="#3498db">
+      <animate attributeName="cx" values="210;220;210" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 骨架人形 2 - 跑步动作 -->
+  <g class="skeleton skeleton-2" opacity="0.6" transform="translate(400, 100)">
+    <!-- 头部到躯干 -->
+    <circle cx="200" cy="150" r="20" fill="rgba(72, 177, 191, 0.3)" stroke="#48b1bf" stroke-width="2"/>
+    <line x1="200" y1="170" x2="200" y2="280" stroke="#48b1bf" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- 左臂 -->
+    <line x1="200" y1="200" x2="150" y2="220" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="150;180;150" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="150" y1="220" x2="120" y2="260" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="150;180;150" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="120;160;120" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="260;240;260" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右臂 -->
+    <line x1="200" y1="200" x2="250" y2="220" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="250;220;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="250" y1="220" x2="280" y2="260" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="250;220;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="280;240;280" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="260;240;260" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 左腿 -->
+    <line x1="200" y1="280" x2="170" y2="340" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="170;220;170" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="170" y1="340" x2="150" y2="400" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="170;220;170" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="150;210;150" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;380;400" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右腿 -->
+    <line x1="200" y1="280" x2="230" y2="340" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x2" values="230;180;230" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="230" y1="340" x2="250" y2="400" stroke="#48b1bf" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="x1" values="230;180;230" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="250;190;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="400;380;400" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 关节点 -->
+    <circle cx="200" cy="200" r="4" fill="#48b1bf"/>
+    <circle cx="200" cy="280" r="4" fill="#48b1bf"/>
+    
+    <circle cx="150" cy="220" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="150;180;150" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="260" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="120;160;120" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;240;260" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="250" cy="220" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="250;220;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="220;200;220" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="260" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="280;240;280" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;240;260" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="170" cy="340" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="170;220;170" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="400" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="150;210;150" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="400;380;400" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="230" cy="340" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="230;180;230" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="340;320;340" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="400" r="3" fill="#48b1bf">
+      <animate attributeName="cx" values="250;190;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="400;380;400" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 骨架人形 3 - 跳跃动作 -->
+  <g class="skeleton skeleton-3" opacity="0.6" transform="translate(800, 50)">
+    <!-- 头部到躯干 -->
+    <circle cx="200" cy="150" r="20" fill="rgba(72, 52, 212, 0.3)" stroke="#4834d4" stroke-width="2"/>
+    <line x1="200" y1="170" x2="200" y2="280" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y2" values="280;260;280" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 左臂 -->
+    <line x1="200" y1="200" x2="150" y2="180" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="200;190;200" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="150" y1="180" x2="120" y2="220" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="220;210;220" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右臂 -->
+    <line x1="200" y1="200" x2="250" y2="180" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="200;190;200" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="250" y1="180" x2="280" y2="220" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="220;210;220" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 左腿 -->
+    <line x1="200" y1="280" x2="170" y2="320" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="280;260;280" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="170" y1="320" x2="180" y2="370" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="370;330;370" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 右腿 -->
+    <line x1="200" y1="280" x2="230" y2="320" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="280;260;280" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="230" y1="320" x2="220" y2="370" stroke="#4834d4" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="y1" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="370;330;370" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- 关节点 -->
+    <circle cx="200" cy="200" r="4" fill="#4834d4">
+      <animate attributeName="cy" values="200;190;200" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="280" r="4" fill="#4834d4">
+      <animate attributeName="cy" values="280;260;280" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="150" cy="180" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="220" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="220;210;220" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="250" cy="180" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="180;170;180" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="220" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="220;210;220" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="170" cy="320" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="370" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="370;330;370" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="230" cy="320" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="320;280;320" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="370" r="3" fill="#4834d4">
+      <animate attributeName="cy" values="370;330;370" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 数据流线条 -->
+  <g class="data-flows">
+    <path d="M300,200 Q400,100 500,200 T700,200" stroke="rgba(52, 152, 219, 0.3)" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M300,200 Q400,100 500,200 T700,200;M300,210 Q400,110 500,210 T700,210;M300,200 Q400,100 500,200 T700,200" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M350,300 Q450,200 550,300 T750,300" stroke="rgba(72, 177, 191, 0.3)" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M350,300 Q450,200 550,300 T750,300;M350,310 Q450,210 550,310 T750,310;M350,300 Q450,200 550,300 T750,300" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400,400 Q500,300 600,400 T800,400" stroke="rgba(72, 52, 212, 0.3)" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M400,400 Q500,300 600,400 T800,400;M400,410 Q500,310 600,410 T800,410;M400,400 Q500,300 600,400 T800,400" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- 数据点 -->
+  <g class="data-points">
+    <circle cx="300" cy="200" r="3" fill="#3498db">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="200" r="3" fill="#3498db">
+      <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="200" r="3" fill="#3498db">
+      <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="350" cy="300" r="3" fill="#48b1bf">
+      <animate attributeName="r" values="3;5;3" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="300" r="3" fill="#48b1bf">
+      <animate attributeName="r" values="3;5;3" dur="2.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="300" r="3" fill="#48b1bf">
+      <animate attributeName="r" values="3;5;3" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="400" cy="400" r="3" fill="#4834d4">
+      <animate attributeName="r" values="3;5;3" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="400" r="3" fill="#4834d4">
+      <animate attributeName="r" values="3;5;3" dur="2.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="400" r="3" fill="#4834d4">
+      <animate attributeName="r" values="3;5;3" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 网格背景 -->
+  <g class="grid" opacity="0.1">
+    <path d="M0,100 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,200 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,300 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,400 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,500 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,600 H1200" stroke="#fff" stroke-width="1"/>
+    <path d="M0,700 H1200" stroke="#fff" stroke-width="1"/>
+    
+    <path d="M100,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M200,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M300,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M400,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M500,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M600,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M700,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M800,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M900,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M1000,0 V800" stroke="#fff" stroke-width="1"/>
+    <path d="M1100,0 V800" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

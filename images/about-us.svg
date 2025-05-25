@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f5f7fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#1a1a2e" text-anchor="middle" font-weight="bold">我们的团队</text>
+  
+  <!-- 团队成员图标 -->
+  <g transform="translate(100,150)">
+    <!-- 人物轮廓 -->
+    <circle cx="50" cy="50" r="40" fill="#3498db" opacity="0.8"/>
+    <circle cx="50" cy="30" r="20" fill="#fff"/>
+    <path d="M30,70 Q50,100 70,70" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="50" y="120" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">AI研究员</text>
+  </g>
+  
+  <g transform="translate(250,150)">
+    <!-- 人物轮廓 -->
+    <circle cx="50" cy="50" r="40" fill="#3498db" opacity="0.8"/>
+    <circle cx="50" cy="30" r="20" fill="#fff"/>
+    <path d="M30,70 Q50,100 70,70" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="50" y="120" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">医疗顾问</text>
+  </g>
+  
+  <g transform="translate(400,150)">
+    <!-- 人物轮廓 -->
+    <circle cx="50" cy="50" r="40" fill="#3498db" opacity="0.8"/>
+    <circle cx="50" cy="30" r="20" fill="#fff"/>
+    <path d="M30,70 Q50,100 70,70" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="50" y="120" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">软件工程师</text>
+  </g>
+  
+  <g transform="translate(550,150)">
+    <!-- 人物轮廓 -->
+    <circle cx="50" cy="50" r="40" fill="#3498db" opacity="0.8"/>
+    <circle cx="50" cy="30" r="20" fill="#fff"/>
+    <path d="M30,70 Q50,100 70,70" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="50" y="120" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">数据科学家</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <line x1="150" y1="200" x2="250" y2="200" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="300" y1="200" x2="400" y2="200" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="450" y1="200" x2="550" y2="200" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- 公司使命 -->
+  <rect x="150" y="300" width="500" height="120" rx="10" ry="10" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial" font-size="18" fill="#1a1a2e" text-anchor="middle" font-weight="bold">我们的使命</text>
+  <text x="400" y="360" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">致力于将先进的AI技术应用于健康监测领域</text>
+  <text x="400" y="385" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">通过骨架动作识别技术，提供非侵入式、高效准确的健康状况评估服务</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="400" r="30" fill="none" stroke="#3498db" stroke-width="2" opacity="0.5"/>
+  <circle cx="700" cy="400" r="30" fill="none" stroke="#3498db" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="100" r="20" fill="none" stroke="#3498db" stroke-width="2" opacity="0.5"/>
+  <circle cx="700" cy="100" r="20" fill="none" stroke="#3498db" stroke-width="2" opacity="0.5"/>
+  
+  <!-- 动画效果 -->
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    g {
+      animation: pulse 3s infinite;
+    }
+    g:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    g:nth-child(3) {
+      animation-delay: 1s;
+    }
+    g:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+  </style>
+</svg>

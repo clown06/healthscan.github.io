@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>先验知识 - HealthScan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">首页</a></li>
+                    <li><a href="../index.html#services">服务</a></li>
+                    <li><a href="../index.html#technology" class="active">技术</a></li>
+                    <li><a href="../index.html#about">关于我们</a></li>
+                    <li><a href="../index.html#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 技术横幅 -->
+    <section class="tech-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>先验知识</h1>
+            <p>提升模型效果的关键技术</p>
+        </div>
+        <img src="../images/prior.png" alt="先验知识技术" class="banner-image">
+    </section>
+
+    <!-- 技术详情 -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="section-content">
+                <h3 class="tech-section-title">技术概述</h3>
+                <p class="tech-description">先验知识是我们健康检测系统的核心创新技术，通过利用通用领域数据的知识，有效克服健康行为数据与日常动作之间的域间差异，显著提升模型的效果和泛化能力。在健康监测领域，数据稀缺性和领域特异性是主要挑战，我们的先验知识技术为解决这些问题提供了创新方案。</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h4>基础模型</h4>
+                        <p>我们在大规模通用动作数据集（NTU RGB+D、Kinetics）上预训练骨架动作识别模型，捕获通用动作特征和模式，为健康行为识别奠定基础。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h4>知识提取</h4>
+                        <p>采用知识蒸馏和特征映射技术，从预训练模型中提取关键动作表示和特征，构建健康行为领域的先验知识库。</p>
+                    </div>
+                    
+                    <div class="tech-feature-card">
+                        <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h4>领域适应</h4>
+                        <p>通过对抗训练和特征对齐技术，将通用动作知识适应到健康监测特定场景，减少领域差异带来的性能下降。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">数据集与预训练</h3>
+                <div class="detail-content">
+                    <div class="detail-text">
+                        <p>我们的先验知识技术基于以下大规模数据集进行预训练：</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <div><strong>NTU RGB+D</strong>：包含56,000多个动作样本，涵盖60种日常动作类别</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>Kinetics-Skeleton</strong>：包含300,000多个视频片段的骨架数据，涵盖400种人类活动</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>Human3.6M</strong>：大规模人体姿态数据集，包含360万个人体姿态帧</div></li>
+                            <li><i class="fas fa-check-circle"></i> <div><strong>自建健康行为数据集</strong>：针对老年人日常活动和特定健康状况的专业数据集</div></li>
+                        </ul>
+                    </div>
+                    <div class="detail-image">
+                        <img src="../images/technology.svg" alt="数据集与预训练">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">任务特定微调</h3>
+                <div class="detail-content reverse">
+                    <div class="detail-image">
+                        <img src="../images/skeleton-tracking.svg" alt="任务特定微调">
+                    </div>
+                    <div class="detail-text">
+                        <p>针对不同健康监测任务，我们采用特定的微调策略：</p>
+                        <ol class="numbered-list">
+                            <li><strong>渐进式微调</strong>：逐层解冻预训练模型，从高层到底层逐步调整参数</li>
+                            <li><strong>对比学习</strong>：利用正负样本对比提升模型对细微行为差异的敏感度</li>
+                            <li><strong>多任务学习</strong>：同时优化多个相关健康监测任务，提高模型泛化能力</li>
+                            <li><strong>少样本适应</strong>：通过元学习技术，使模型能够从少量样本中快速适应新任务</li>
+                            <li><strong>持续学习</strong>：在保留原有知识的基础上，不断整合新的健康行为模式</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">关键特性与优势</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>性能提升</h4>
+                        <p>在小样本场景下显著提高识别准确率，平均提升15-20%，在阿尔兹海默症早期症状识别中准确率提升达25%。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <h4>泛化能力</h4>
+                        <p>模型能够适应不同环境、不同用户的个体差异，在未见过的场景中保持稳定性能，降低误报率30%以上。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>快速适应</h4>
+                        <p>新用户仅需5-10分钟的行为数据采集，系统即可建立个性化模型，大幅降低系统部署和适应成本。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>知识迁移</h4>
+                        <p>能够将一种健康状况的识别经验迁移到相关健康状况的识别中，加速新应用场景的开发和部署。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">应用案例与研究成果</h3>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-microscope"></i></div>
+                        <h4>阿尔兹海默症早期检测</h4>
+                        <p>利用先验知识技术，我们的模型能够从日常行为中识别阿尔兹海默症的早期微妙症状，仅需少量样本即可达到90%以上的识别准确率，比传统方法提前6-12个月发现异常。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>智能跌倒预防</h4>
+                        <p>通过先验知识增强的跌倒风险评估系统，能够从日常行走姿态中识别潜在跌倒风险，预测准确率达85%，并提供个性化预防建议，降低老年人跌倒风险30%以上。</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><i class="fas fa-user-cog"></i></div>
+                        <h4>个性化健康监测</h4>
+                        <p>基于先验知识的个性化模型能够快速适应不同用户的行为特点，仅需5-10分钟的行为数据采集，即可建立高精度个性化健康监测模型，大幅提升用户体验和监测准确性。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h3 class="tech-section-title">技术发展路线</h3>
+                <div class="roadmap">
+                    <div class="roadmap-item">
+                        <div class="roadmap-date">2021</div>
+                        <div class="roadmap-content">
+                            <h4>基础研究</h4>
+                            <p>完成先验知识迁移基础理论研究，发表多篇高水平学术论文</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-date">2022</div>
+                        <div class="roadmap-content">
+                            <h4>技术验证</h4>
+                            <p>在实验室环境完成技术验证，识别准确率提升15%</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-date">2023</div>
+                        <div class="roadmap-content">
+                            <h4>产品化</h4>
+                            <p>完成技术产品化，推出首个基于先验知识的健康监测系统</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-date">2024+</div>
+                        <div class="roadmap-content">
+                            <h4>持续创新</h4>
+                            <p>扩展应用场景，提升模型性能，推动技术持续迭代</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>想了解更多？</h3>
+                <p>我们的技术专家随时为您提供更详细的技术咨询和演示，帮助您了解先验知识技术如何为健康监测系统提供更高的准确性和适应性。</p>
+                <a href="../index.html#contact" class="btn btn-primary">联系我们</a>
+                <a href="../index.html#technology" class="btn btn-secondary" id="return-to-tech">返回技术列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="../index.html#home">首页</a></li>
+                        <li><a href="../index.html#services">服务</a></li>
+                        <li><a href="../index.html#technology">技术</a></li>
+                        <li><a href="../index.html#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="../services/alzheimer.html">阿尔兹海默症检测</a></li>
+                        <li><a href="../services/fall-detection.html">跌倒检测与预防</a></li>
+                        <li><a href="../services/health-analytics.html">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

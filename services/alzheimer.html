@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿尔兹海默症检测 - HealthScan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.html#services" class="active">服务</a></li>
+                    <li><a href="../index.html#technology">技术</a></li>
+                    <li><a href="../index.html#about">关于我们</a></li>
+                    <li><a href="../index.html#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 服务详情 -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="section-header">
+                <h2>阿尔兹海默症检测</h2>
+                <p>基于骨架动作识别的早期阿尔兹海默症检测服务</p>
+            </div>
+            
+            <div class="detail-content">
+                <div class="detail-image">
+                    <img src="../images/AI_haimo.png" alt="阿尔兹海默症检测服务">
+                </div>
+                
+                <div class="detail-text">
+                    <h3>服务介绍</h3>
+                    <p>阿尔兹海默症是一种常见的神经退行性疾病，早期症状往往难以察觉。基于骨架动作识别算法可以捕捉到微小的行为变化，这些变化可能是阿尔兹海默症的早期迹象。</p>
+                    
+                    <h3>工作原理</h3>
+                    <p>我们的系统通过以下步骤进行阿尔兹海默症早期检测：</p>
+                    <ol>
+                        <li>监测、采集日常活动中的行为动作</li>
+                        <li>AI算法分析动作的协调性、速度和规律性</li>
+                        <li>识别与阿尔兹海默症相关的行为变化</li>
+                        <li>生成疾病预测结果，为医疗专业人员提供参考</li>
+                    </ol>
+                    
+                    <h3>主要特点</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>早期症状识别：</strong>能够识别传统方法难以察觉的微小行为变化</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>动作行为分析：</strong>全面分析日常活动中的行为模式变化</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>非侵入式监测：</strong>无需佩戴任何设备，不干扰正常生活</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>长期趋势追踪：</strong>记录长期行为变化，提供趋势分析</li>
+                        <!---<li><i class="fas fa-check-circle"></i> <strong>医疗参考报告：</strong>生成专业报告供医疗人员参考</li>--->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-upload-section">
+                <h3>视频分析服务</h3>
+                <p>上传您的视频，我们的AI算法将分析其中的动作模式，为您提供阿尔兹海默症风险评估。</p>
+                
+                <div class="upload-container">
+                    <form id="video-upload-form" enctype="multipart/form-data">
+                        <div class="file-input-container">
+                            <label for="video-file" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i> 选择视频文件
+                            </label>
+                            <input type="file" id="video-file" name="video" accept="video/*" class="file-input" required>
+                            <span id="file-name">未选择文件</span>
+                        </div>
+                        
+                        <div class="upload-details">
+                            <div class="upload-info">
+                                <h4>上传要求</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 支持格式：MP4, AVI, MOV, WMV</li>
+                                    <li><i class="fas fa-check"></i> 最大文件大小：500MB</li>
+                                    <li><i class="fas fa-check"></i> 建议视频长度：3-5分钟</li>
+                                    <li><i class="fas fa-check"></i> 视频内容：日常活动场景</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress" id="upload-progress"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                        
+                        <div class="consent-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">我同意上传的视频仅用于阿尔兹海默症风险评估，并了解数据将按照隐私政策处理</label>
+                        </div>
+                        
+                        <div class="upload-actions">
+                            <button type="submit" class="btn btn-primary" id="upload-btn">上传视频</button>
+                            <button type="reset" class="btn btn-secondary">重置</button>
+                        </div>
+                        
+                        <div id="upload-message" class="upload-message"></div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="case-studies">
+                <h3>应用案例</h3>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <h4>养老院应用</h4>
+                        <p>在多家养老院的应用中，算法通过识别老人的早期阿尔兹海默症迹象，促使患者能够及早接受治疗。</p>
+                    </div>
+                    <div class="case-card">
+                        <h4>家庭监护</h4>
+                        <p>在家庭中可以通过使用我们的算法监测老年亲属的健康状况，为家人提供了安心和及时干预的机会。</p>
+                    </div>
+                    <div class="case-card">
+                        <h4>医疗研究</h4>
+                        <p>将人工智能相关技术与医疗研究相结合，通过大数据、新技术促进阿尔兹海默症医疗研究。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>了解更多信息</h3>
+                <p>如果您对我们的阿尔兹海默症检测服务感兴趣，请联系我们获取更多信息或预约演示。</p>
+                <a href="../index.html#contact" class="btn btn-primary">联系我们</a>
+                <a href="../index.html#services" class="btn btn-secondary">返回服务列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../index.html#services">服务</a></li>
+                        <li><a href="../index.html#technology">技术</a></li>
+                        <li><a href="../index.html#about">关于我们</a></li>
+                        <li><a href="../index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="alzheimer.html">阿尔兹海默症检测</a></li>
+                        <li><a href="fall-detection.html">跌倒检测与预防</a></li>
+                        <li><a href="health-analytics.html">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跌倒检测与预防 - HealthScan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.html#services" class="active">服务</a></li>
+                    <li><a href="../index.html#technology">技术</a></li>
+                    <li><a href="../index.html#about">关于我们</a></li>
+                    <li><a href="../index.html#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 服务详情 -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="section-header">
+                <h2>跌倒检测与预防</h2>
+                <p>基于骨架动作识别的跌倒监测系统</p>
+            </div>
+            
+            <div class="detail-content">
+                <div class="detail-image">
+                    <img src="../images/AI_fall_detection.png" alt="跌倒检测与预防服务">
+                </div>
+                
+                <div class="detail-text">
+                    <h3>服务介绍</h3>
+                    <p>跌倒是老年人和行动不便人士面临的主要健康风险之一。我们的跌倒检测与预防系统利用先进的骨架动作识别技术，实时监测用户的动作状态，在发生跌倒时可以发出警报，为紧急救援提供帮助。</p>
+                    
+                    <h3>工作原理</h3>
+                    <p>我们的跌倒检测与预防系统通过以下步骤工作：</p>
+                    <ol>
+                        <li>实时监测用户的骨架动作和姿态变化</li>
+                        <li>算法分析动作特征，识别跌倒事件</li>
+                        <li>发生跌倒时，触发警报系统</li>
+                        <li>为通知指定的家人或医疗人员，提供信息</li>
+                        <!--<li>生成跌倒风险评估报告，提供预防建议</li>--->
+                    </ol>
+                    
+                    <h3>主要特点</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>实时跌倒检测：</strong>快速响应，确保及时发现跌倒事件</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>非侵入式监测：</strong>无需佩戴任何设备，不干扰正常生活</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>抵抗环境噪声：</strong>基于骨架数据识别动作，抵抗环境中噪声能力强</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>风险预警评估：</strong>识别跌倒等高风险动作，辅助快速救助</li>
+                        <!---<li><i class="fas fa-check-circle"></i> <strong>隐私保护：</strong>只分析骨架数据，不存储或传输实际图像</li>--->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="video-upload-section">
+                <h3>视频分析服务</h3>
+                <p>上传您的视频，我们的AI算法将分析其中的动作模式，为您提供跌倒风险评估。</p>
+                
+                <div class="upload-container">
+                    <form id="video-upload-form" enctype="multipart/form-data">
+                        <div class="file-input-container">
+                            <label for="video-file" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i> 选择视频文件
+                            </label>
+                            <input type="file" id="video-file" name="video" accept="video/*" class="file-input" required>
+                            <span id="file-name">未选择文件</span>
+                        </div>
+                        
+                        <div class="upload-details">
+                            <div class="upload-info">
+                                <h4>上传要求</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 支持格式：MP4, AVI, MOV, WMV</li>
+                                    <li><i class="fas fa-check"></i> 最大文件大小：500MB</li>
+                                    <li><i class="fas fa-check"></i> 建议视频长度：3-5分钟</li>
+                                    <li><i class="fas fa-check"></i> 视频内容：日常活动场景</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress" id="upload-progress"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                        
+                        <div class="consent-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">我同意上传的视频仅用于跌倒风险评估，并了解数据将按照隐私政策处理</label>
+                        </div>
+                        
+                        <div class="upload-actions">
+                            <button type="submit" class="btn btn-primary" id="upload-btn">上传视频</button>
+                            <button type="reset" class="btn btn-secondary">重置</button>
+                        </div>
+                        
+                        <div id="upload-message" class="upload-message"></div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="case-studies">
+                <h3>应用案例</h3>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <h4>养老院应用</h4>
+                        <p>在养老院中应用该算法，可以有效减少了因未及时发现跌倒而导致的严重伤害，提升老人的安全感。</p>
+                    </div>
+                    <div class="case-card">
+                        <h4>家庭护理</h4>
+                        <p>在独居老人的住所进行监测，让家人能够及时了解老人的安全状况，减轻照护压力。</p>
+                    </div>
+                    <div class="case-card">
+                        <h4>康复中心</h4>
+                        <p>康复中心中使用该算法监测患者的活动情况，为康复训练提供了安全保障。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>了解更多信息</h3>
+                <p>如果您对我们的跌倒检测服务感兴趣，请联系我们获取更多信息。</p>
+                <a href="../index.html#contact" class="btn btn-primary">联系我们</a>
+                <a href="../index.html#services" class="btn btn-secondary">返回服务列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../index.html#services">服务</a></li>
+                        <li><a href="../index.html#technology">技术</a></li>
+                        <li><a href="../index.html#about">关于我们</a></li>
+                        <li><a href="../index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="alzheimer.html">阿尔兹海默症检测</a></li>
+                        <li><a href="fall-detection.html">跌倒检测与预防</a></li>
+                        <li><a href="health-analytics.html">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
