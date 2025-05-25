@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthScan - 基于骨架的健康检测服务</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HealthScan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#technology">技术</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-skeleton-bg">
+            <object data="images/skeleton-animation-bg.svg" type="image/svg+xml" width="100%" height="100%"></object>
+        </div>
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="tech-badge">AI驱动</div>
+                <h1>智能健康<span class="highlight">检测</span></h1>
+                <h2>基于骨架的动作识别技术</h2>
+                <p>通过先进的AI技术与人体骨架分析，我们提供精准的健康监测服务</p>
+                <div class="digital-metrics">
+                    <div class="metric"><span class="counter">80</span>%<span class="label">检测准确率</span></div>
+                    <div class="metric"><span class="counter">24</span>/7<span class="label">实时监测</span></div>
+                    <div class="metric"><span class="counter">1000</span>+<span class="label">用户案例</span></div>
+                </div>
+                <!-- 按钮已移除以优化页面显示 -->
+            </div>
+            <div class="hero-image">
+                <div class="tech-circles">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                </div>
+                <img src="images/skeleton-tracking.svg" alt="骨架动作识别示意图">
+                <div class="data-lines">
+                    <div class="data-line"></div>
+                    <div class="data-line"></div>
+                    <div class="data-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务部分 -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>我们的服务</h2>
+                <p>基于骨架动作识别技术的健康检测解决方案</p>
+            </div>
+            
+            <!-- 阿尔兹海默症检测服务 -->
+            <div class="service-item">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>阿尔兹海默症检测</h3>
+                    <p>通过分析日常行为动作，算法可以检测出阿尔兹海默症的早期迹象，帮助及早干预、治疗。算法通过识别微妙的行为变化，为医疗专业人员提供宝贵的诊断参考。</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> 早期症状识别</li>
+                        <li><i class="fas fa-check-circle"></i> 行为模式分析</li>
+                        <li><i class="fas fa-check-circle"></i> 非侵入式监测</li>
+                    </ul>
+                    <a href="services/alzheimer.html" class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="images/haimo.png" alt="阿尔兹海默症检测服务">
+                </div>
+            </div>
+            
+            <!-- 跌倒检测与预防服务 -->
+            <div class="service-item reverse">
+                <div class="service-image">
+                    <img src="images/fall_detection.png" alt="跌倒检测与预防服务">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-person-falling"></i>
+                    </div>
+                    <h3>跌倒检测与预防</h3>
+                    <p>我们的系统可以实时监测跌倒风险，在发生跌倒时立即发出警报，联系亲属及急救人员。为老年人和行动不便人士的家庭安全提供保障。</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> 跌倒动作检测</li>
+                        <li><i class="fas fa-check-circle"></i> 实时监测系统</li>
+                        <li><i class="fas fa-check-circle"></i> 低成本高效率</li>
+                    </ul>
+                    <a href="services/fall-detection.html" class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- 健康数据分析服务 -->
+            <!-- 暂时隐藏健康数据分析服务
+            <div class="service-item">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>健康数据分析</h3>
+                    <p>基于长期的动作数据收集，我们提供个性化的健康趋势分析和改善建议。通过AI驱动的数据分析，帮助用户了解自己的健康状况变化，及时调整生活方式。</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> 个性化健康报告</li>
+                        <li><i class="fas fa-check-circle"></i> 趋势分析与预测</li>
+                        <li><i class="fas fa-check-circle"></i> 健康改善建议</li>
+                    </ul>
+                    <a href="services/health-analytics.html" class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="images/about-us.svg" alt="健康数据分析服务">
+                </div>
+            </div>
+            -->
+        </div>
+        </div>
+    </section>
+
+    <!-- 技术部分 -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>我们的技术</h2>
+                <p>先进的骨架动作识别技术</p>
+            </div>
+            <div class="tech-grid">
+                <!-- 骨架动作识别技术卡片 -->
+                <a href="technologies/skeleton-require.html" class="tech-card">
+                    <div class="tech-card-image">
+                        <img src="images/skeleton.png" alt="骨架动作识别技术">
+                    </div>
+                    <div class="tech-card-content">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3>骨架数据获取</h3>
+                        <p>我们的算法使用先进的人体姿态估计算法，能够准确识别和追踪人体骨架关键点，获取骨架数据，减轻环境噪声的影响。</p>
+                        <span class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+                <!-- 深度学习技术卡片 -->
+                <a href="technologies/action-recognition.html" class="tech-card">
+                    <div class="tech-card-image">
+                        <img src="images/infogcn.png" alt="深度学习技术">
+                    </div>
+                    <div class="tech-card-content">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>基于骨架的动作识别</h3>
+                        <p>采用深度学习算法，并在健康监测垂直领域进行适配，实现高精度的动作识别和行为分析，为健康监测提供可靠支持。</p>
+                        <span class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+                <!-- 实时监测技术卡片 -->
+                <a href="technologies/prior-knowledge.html" class="tech-card">
+                    <div class="tech-card-image">
+                        <img src="images/prior.png" alt="实时监测技术">
+                    </div>
+                    <div class="tech-card-content">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>先验知识</h3>
+                        <p>为克服健康行为数据与日常动作之间的域间差异，算法使用通用领域数据的先验知识，提升模型的效果</p>
+                        <span class="btn btn-primary">查看详情 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 (已注释) -->
+    <!-- 
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>关于我们</h2>
+                <p>致力于通过AI技术改善健康监测</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-us.svg" alt="关于我们">
+                </div>
+                <div class="about-text">
+                    <h3>我们的使命</h3>
+                    <p>HealthScan致力于将先进的AI技术应用于健康监测领域，通过骨架动作识别技术，我们为用户提供非侵入式、高效准确的健康状况评估服务。</p>
+                    <p>我们的团队由AI专家、医疗专业人士和软件工程师组成，共同致力于开发创新的健康监测解决方案。</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>高准确率</h4>
+                            <p>检测准确率</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1000+</h4>
+                            <p>用户案例</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>24/7</h4>
+                            <p>实时监测</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>了解更多信息或预约演示</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>地址</h3>
+                            <p>青岛市黄岛区UPC</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>邮箱</h3>
+                            <p>contact@healthscan.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>电话</h3>
+                            <p>+86 10 8888 8888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="您的留言" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HealthScan</h2>
+                    <p>基于骨架的健康检测服务</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#services">服务</a></li>
+                        <li><a href="#technology">技术</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>我们的服务</h3>
+                    <ul>
+                        <li><a href="#">阿尔兹海默症检测</a></li>
+                        <li><a href="#">跌倒检测与预防</a></li>
+                        <li><a href="#">健康数据分析</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HealthScan. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
